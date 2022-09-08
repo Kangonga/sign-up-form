@@ -1,0 +1,86 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+
+}
+.leftContainer{
+    width: 40%;
+    min-height: 100vh;
+    background: url(background.jpg);
+    
+    position: relative;
+}
+.logoContainer{
+    padding: 1rem;
+    margin-top: 10%;
+    display: flex;
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    gap: 1rem;
+    align-items: center;
+}
+.rightContainer{
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+}
+.blurBackground{
+    position: absolute;
+    background-color: gray;
+    min-height: 17%;
+    width: 100%;
+    top: 7%;
+    opacity: 0.1;
+}
+.logoText{
+    z-index: 2;
+}
+.mask{
+    width: 20%;
+    opacity: 0.9;
+}
+.intro{
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+.beforeForm{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+fieldset{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   border: none;
+}
+fieldset > div{
+    width: 43%;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.formFooter{
+    padding-left: 2.5rem;
+}
+.submit{
+    font-size: 1.3rem;
+    background-color: gray;
+    padding: 0.5rem;
+    border: 0.5px solid white;
+    border-radius: 12px;
+}
+.error{
+    display: none;
+    font-size: 0.9rem;
+    text-align: center;
+    color: red;
+}
